@@ -1,7 +1,7 @@
 # Ambient Intelligence Project: Ground Regulation at Camp Nou Stadium
 ## Project Overview
 Welcome to the Ambient Intelligence project for optimizing the environment at Camp Nou Stadium based on grass and weather conditions. This system utilizes smart sensors to monitor real-time data and dynamically regulate the stadium environment. The project aims to provide a comfortable, safe, and sustainable experience for visitors.
-
+![campnou](https://github.com/sametkosum/AmbienIntelligence_2/assets/117012520/4fee7bf9-1727-4236-a01f-892490e962f3)
 
 ## Project Objective
 
@@ -59,6 +59,8 @@ The primary goal of this project is to introduce an Ambient Intelligence system 
       - WaterGridSystem
       - IrrigationSystem
 
+
+![Classes1](https://github.com/sametkosum/AmbienIntelligence_2/assets/117012520/0c5620bf-4513-4aff-b3c1-87371c5212d1)
 ## Object Properties
 
 1. **hasCondition**
@@ -80,6 +82,9 @@ The primary goal of this project is to introduce an Ambient Intelligence system 
    - *Domain:* GrassCondition, WeatherCondition, TemperatureCondition
    - *Range:* GrassCondition, WeatherCondition, TemperatureCondition
    - *Description:* Indicates the relationships between different conditions.
+
+![object1](https://github.com/sametkosum/AmbienIntelligence_2/assets/117012520/02d82d88-1ad2-4760-87f0-44e01427e012)
+
 
 ## Data Properties
 
@@ -106,3 +111,4 @@ The primary goal of this project is to introduce an Ambient Intelligence system 
 5. **hasSystemStatus**
    - *Domain:* RegulationDevice (IrrigationSystem, HeaterSystem, WaterGridSystem)
    - *Range:* xsd:string    
+![DataProperty](https://github.com/sametkosum/AmbienIntelligence_2/assets/117012520/15cb1550-c6b1-463c-8ba1-d6d62a8a17d1)
