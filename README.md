@@ -5,7 +5,7 @@ Welcome to the Ambient Intelligence project for optimizing the environment at Ca
 
 <img src="https://github.com/sametkosum/AmbienIntelligence_2/assets/117012520/4fee7bf9-1727-4236-a01f-892490e962f3" width="800" height="400" />
 
-## Project Objective
+## Project Objective 
 
 The primary goal of this project is to introduce an Ambient Intelligence system that optimizes the environment at Camp Nou Stadium by monitoring grass and weather conditions. The system responds dynamically to ensure the optimal grass level, providing adaptive and effective measures based on specific weather and grass conditions.
 **Author**: *[Ahmet Samet Kosum](https://github.com/sametkosum)*, [s56358306@studenti.unige.it](s5635830@studenti.unige.it)
@@ -114,3 +114,7 @@ The primary goal of this project is to introduce an Ambient Intelligence system 
    - *Domain:* RegulationDevice (IrrigationSystem, HeaterSystem, WaterGridSystem)
    - *Range:* xsd:string    
 ![DataProperty](https://github.com/sametkosum/AmbienIntelligence_2/assets/117012520/15cb1550-c6b1-463c-8ba1-d6d62a8a17d1)
+
+## Conclusion
+Our Ambient Intelligence project at Camp Nou Stadium optimizes the environment by dynamically responding to real-time grass and weather conditions. This ensures a personalized and enjoyable experience for visitors, prioritizes safety and health, and promotes environmental sustainability. By leveraging smart sensors and analytics, we've created a cutting-edge system that transforms the stadium experience, making it not only smarter but also more adaptive and eco-friendly.
+
