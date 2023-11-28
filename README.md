@@ -1,9 +1,7 @@
 # Ambient Intelligence Project: Ground Regulation at Camp Nou Stadium
-The current ontology represents vertical farming examply for Ambient intelligence exercise II. The application is built using [Protegé](https://protege.stanford.edu/) software. 
-
 ## Project Overview
-
 Welcome to the Ambient Intelligence project for optimizing the environment at Camp Nou Stadium based on grass and weather conditions. This system utilizes smart sensors to monitor real-time data and dynamically regulate the stadium environment. The project aims to provide a comfortable, safe, and sustainable experience for visitors.
+
 
 ## Project Objective
 
