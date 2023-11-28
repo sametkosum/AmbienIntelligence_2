@@ -4,7 +4,6 @@ Welcome to the Ambient Intelligence project for optimizing the environment at Ca
 
 
 <img src="https://github.com/sametkosum/AmbienIntelligence_2/assets/117012520/4fee7bf9-1727-4236-a01f-892490e962f3" width="800" height="400" />
-![campnou](https://github.com/sametkosum/AmbienIntelligence_2/assets/117012520/4fee7bf9-1727-4236-a01f-892490e962f3)
 
 ## Project Objective
 
