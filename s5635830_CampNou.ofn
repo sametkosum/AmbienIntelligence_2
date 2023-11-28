@@ -1,0 +1,385 @@
+Prefix(:=<http://www.semanticweb.org/lenovo/ontologies/2023/10/untitled-ontology-23#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(swrl:=<http://www.w3.org/2003/11/swrl#>)
+Prefix(swrlb:=<http://www.w3.org/2003/11/swrlb#>)
+Prefix(untitled-ontology-23:=<http://www.semanticweb.org/lenovo/ontologies/2023/10/untitled-ontology-23#>)
+
+
+Ontology(<http://www.semanticweb.org/lenovo/ontologies/2023/10/untitled-ontology-23>
+
+Declaration(Class(untitled-ontology-23:ColdWeather))
+Declaration(Class(untitled-ontology-23:DryGrass))
+Declaration(Class(untitled-ontology-23:GrassCondition))
+Declaration(Class(untitled-ontology-23:GrassSensor))
+Declaration(Class(untitled-ontology-23:HeaterSystem))
+Declaration(Class(untitled-ontology-23:HighTemperature))
+Declaration(Class(untitled-ontology-23:HotWeather))
+Declaration(Class(untitled-ontology-23:IrrigationSystem))
+Declaration(Class(untitled-ontology-23:LowTemperature))
+Declaration(Class(untitled-ontology-23:NormalWeather))
+Declaration(Class(untitled-ontology-23:RegulationDevice))
+Declaration(Class(untitled-ontology-23:Sensor))
+Declaration(Class(untitled-ontology-23:SmartFootballStadium))
+Declaration(Class(untitled-ontology-23:SnowCoveredGrass))
+Declaration(Class(untitled-ontology-23:TemperatureCondition))
+Declaration(Class(untitled-ontology-23:TemperatureSensor))
+Declaration(Class(untitled-ontology-23:WaterGridSystem))
+Declaration(Class(untitled-ontology-23:WeatherConditon))
+Declaration(Class(untitled-ontology-23:WeatherSensor))
+Declaration(Class(untitled-ontology-23:wetGrass))
+Declaration(ObjectProperty(untitled-ontology-23:hasCondition))
+Declaration(ObjectProperty(untitled-ontology-23:isConnectedTo))
+Declaration(ObjectProperty(untitled-ontology-23:regulatesWithDevice))
+Declaration(ObjectProperty(untitled-ontology-23:usesSensor))
+Declaration(DataProperty(untitled-ontology-23:hasGrassStatus))
+Declaration(DataProperty(untitled-ontology-23:hasSystemStatus))
+Declaration(DataProperty(untitled-ontology-23:hasTemperatureValue))
+Declaration(DataProperty(untitled-ontology-23:hasWeatherType))
+Declaration(DataProperty(untitled-ontology-23:regulationStatus))
+Declaration(NamedIndividual(untitled-ontology-23:Active))
+Declaration(NamedIndividual(untitled-ontology-23:CampNou))
+Declaration(NamedIndividual(untitled-ontology-23:Cold))
+Declaration(NamedIndividual(untitled-ontology-23:ColdWeatherCampNou))
+Declaration(NamedIndividual(untitled-ontology-23:Dry))
+Declaration(NamedIndividual(untitled-ontology-23:DryGrassCampNou))
+Declaration(NamedIndividual(untitled-ontology-23:HeaterSystemCampNou))
+Declaration(NamedIndividual(untitled-ontology-23:HighTemperatureCampNou))
+Declaration(NamedIndividual(untitled-ontology-23:Hot))
+Declaration(NamedIndividual(untitled-ontology-23:HotWeatherCampNou))
+Declaration(NamedIndividual(untitled-ontology-23:Inactive))
+Declaration(NamedIndividual(untitled-ontology-23:IrrigationSystemCampNou))
+Declaration(NamedIndividual(untitled-ontology-23:LowTemperatureCampNou))
+Declaration(NamedIndividual(untitled-ontology-23:Normal))
+Declaration(NamedIndividual(untitled-ontology-23:NormalWeatherCampNou))
+Declaration(NamedIndividual(untitled-ontology-23:RegulationDevice))
+Declaration(NamedIndividual(untitled-ontology-23:Snow))
+Declaration(NamedIndividual(untitled-ontology-23:SnowCoveredGrassCampNou))
+Declaration(NamedIndividual(untitled-ontology-23:TemperatureSensorCampNou))
+Declaration(NamedIndividual(untitled-ontology-23:WaterGridSystemCampNou))
+Declaration(NamedIndividual(untitled-ontology-23:WeatherSensorCampNou))
+Declaration(NamedIndividual(untitled-ontology-23:Wet))
+Declaration(NamedIndividual(untitled-ontology-23:WetGrassCampNou))
+############################
+#   Object Properties
+############################
+
+# Object Property: untitled-ontology-23:hasCondition (untitled-ontology-23:hasCondition)
+
+SubObjectPropertyOf(untitled-ontology-23:hasCondition owl:topObjectProperty)
+ObjectPropertyDomain(untitled-ontology-23:hasCondition ObjectSomeValuesFrom(untitled-ontology-23:hasCondition untitled-ontology-23:SmartFootballStadium))
+ObjectPropertyDomain(untitled-ontology-23:hasCondition ObjectSomeValuesFrom(owl:topObjectProperty untitled-ontology-23:SmartFootballStadium))
+ObjectPropertyRange(untitled-ontology-23:hasCondition ObjectSomeValuesFrom(untitled-ontology-23:hasCondition untitled-ontology-23:GrassCondition))
+ObjectPropertyRange(untitled-ontology-23:hasCondition ObjectSomeValuesFrom(untitled-ontology-23:hasCondition untitled-ontology-23:HighTemperature))
+ObjectPropertyRange(untitled-ontology-23:hasCondition ObjectSomeValuesFrom(untitled-ontology-23:hasCondition untitled-ontology-23:LowTemperature))
+ObjectPropertyRange(untitled-ontology-23:hasCondition ObjectSomeValuesFrom(untitled-ontology-23:hasCondition untitled-ontology-23:TemperatureCondition))
+ObjectPropertyRange(untitled-ontology-23:hasCondition ObjectSomeValuesFrom(untitled-ontology-23:hasCondition untitled-ontology-23:WeatherConditon))
+
+# Object Property: untitled-ontology-23:isConnectedTo (untitled-ontology-23:isConnectedTo)
+
+SubObjectPropertyOf(untitled-ontology-23:isConnectedTo owl:topObjectProperty)
+ObjectPropertyDomain(untitled-ontology-23:isConnectedTo ObjectSomeValuesFrom(untitled-ontology-23:isConnectedTo untitled-ontology-23:ColdWeather))
+ObjectPropertyDomain(untitled-ontology-23:isConnectedTo ObjectSomeValuesFrom(untitled-ontology-23:isConnectedTo untitled-ontology-23:DryGrass))
+ObjectPropertyDomain(untitled-ontology-23:isConnectedTo ObjectSomeValuesFrom(untitled-ontology-23:isConnectedTo untitled-ontology-23:GrassCondition))
+ObjectPropertyDomain(untitled-ontology-23:isConnectedTo ObjectSomeValuesFrom(untitled-ontology-23:isConnectedTo untitled-ontology-23:HighTemperature))
+ObjectPropertyDomain(untitled-ontology-23:isConnectedTo ObjectSomeValuesFrom(untitled-ontology-23:isConnectedTo untitled-ontology-23:HotWeather))
+ObjectPropertyDomain(untitled-ontology-23:isConnectedTo ObjectSomeValuesFrom(untitled-ontology-23:isConnectedTo untitled-ontology-23:LowTemperature))
+ObjectPropertyDomain(untitled-ontology-23:isConnectedTo ObjectSomeValuesFrom(untitled-ontology-23:isConnectedTo untitled-ontology-23:NormalWeather))
+ObjectPropertyDomain(untitled-ontology-23:isConnectedTo ObjectSomeValuesFrom(untitled-ontology-23:isConnectedTo untitled-ontology-23:SnowCoveredGrass))
+ObjectPropertyDomain(untitled-ontology-23:isConnectedTo ObjectSomeValuesFrom(untitled-ontology-23:isConnectedTo untitled-ontology-23:TemperatureCondition))
+ObjectPropertyDomain(untitled-ontology-23:isConnectedTo ObjectSomeValuesFrom(untitled-ontology-23:isConnectedTo untitled-ontology-23:WeatherConditon))
+ObjectPropertyDomain(untitled-ontology-23:isConnectedTo ObjectSomeValuesFrom(untitled-ontology-23:isConnectedTo untitled-ontology-23:wetGrass))
+ObjectPropertyRange(untitled-ontology-23:isConnectedTo ObjectSomeValuesFrom(untitled-ontology-23:isConnectedTo untitled-ontology-23:ColdWeather))
+ObjectPropertyRange(untitled-ontology-23:isConnectedTo ObjectSomeValuesFrom(untitled-ontology-23:isConnectedTo untitled-ontology-23:DryGrass))
+ObjectPropertyRange(untitled-ontology-23:isConnectedTo ObjectSomeValuesFrom(untitled-ontology-23:isConnectedTo untitled-ontology-23:GrassCondition))
+ObjectPropertyRange(untitled-ontology-23:isConnectedTo ObjectSomeValuesFrom(untitled-ontology-23:isConnectedTo untitled-ontology-23:HighTemperature))
+ObjectPropertyRange(untitled-ontology-23:isConnectedTo ObjectSomeValuesFrom(untitled-ontology-23:isConnectedTo untitled-ontology-23:HotWeather))
+ObjectPropertyRange(untitled-ontology-23:isConnectedTo ObjectSomeValuesFrom(untitled-ontology-23:isConnectedTo untitled-ontology-23:LowTemperature))
+ObjectPropertyRange(untitled-ontology-23:isConnectedTo ObjectSomeValuesFrom(untitled-ontology-23:isConnectedTo untitled-ontology-23:NormalWeather))
+ObjectPropertyRange(untitled-ontology-23:isConnectedTo ObjectSomeValuesFrom(untitled-ontology-23:isConnectedTo untitled-ontology-23:SnowCoveredGrass))
+ObjectPropertyRange(untitled-ontology-23:isConnectedTo ObjectSomeValuesFrom(untitled-ontology-23:isConnectedTo untitled-ontology-23:TemperatureCondition))
+ObjectPropertyRange(untitled-ontology-23:isConnectedTo ObjectSomeValuesFrom(untitled-ontology-23:isConnectedTo untitled-ontology-23:WeatherConditon))
+ObjectPropertyRange(untitled-ontology-23:isConnectedTo ObjectSomeValuesFrom(untitled-ontology-23:isConnectedTo untitled-ontology-23:wetGrass))
+
+# Object Property: untitled-ontology-23:regulatesWithDevice (untitled-ontology-23:regulatesWithDevice)
+
+SubObjectPropertyOf(untitled-ontology-23:regulatesWithDevice owl:topObjectProperty)
+ObjectPropertyDomain(untitled-ontology-23:regulatesWithDevice ObjectSomeValuesFrom(untitled-ontology-23:regulatesWithDevice untitled-ontology-23:SmartFootballStadium))
+ObjectPropertyDomain(untitled-ontology-23:regulatesWithDevice ObjectSomeValuesFrom(owl:topObjectProperty untitled-ontology-23:SmartFootballStadium))
+ObjectPropertyRange(untitled-ontology-23:regulatesWithDevice ObjectSomeValuesFrom(untitled-ontology-23:regulatesWithDevice untitled-ontology-23:HeaterSystem))
+ObjectPropertyRange(untitled-ontology-23:regulatesWithDevice ObjectSomeValuesFrom(untitled-ontology-23:regulatesWithDevice untitled-ontology-23:IrrigationSystem))
+ObjectPropertyRange(untitled-ontology-23:regulatesWithDevice ObjectSomeValuesFrom(untitled-ontology-23:regulatesWithDevice untitled-ontology-23:RegulationDevice))
+ObjectPropertyRange(untitled-ontology-23:regulatesWithDevice ObjectSomeValuesFrom(untitled-ontology-23:regulatesWithDevice untitled-ontology-23:WaterGridSystem))
+
+# Object Property: untitled-ontology-23:usesSensor (untitled-ontology-23:usesSensor)
+
+SubObjectPropertyOf(untitled-ontology-23:usesSensor owl:topObjectProperty)
+ObjectPropertyDomain(untitled-ontology-23:usesSensor ObjectSomeValuesFrom(untitled-ontology-23:usesSensor untitled-ontology-23:SmartFootballStadium))
+ObjectPropertyDomain(untitled-ontology-23:usesSensor ObjectSomeValuesFrom(owl:topObjectProperty untitled-ontology-23:SmartFootballStadium))
+ObjectPropertyRange(untitled-ontology-23:usesSensor ObjectSomeValuesFrom(untitled-ontology-23:usesSensor untitled-ontology-23:GrassSensor))
+ObjectPropertyRange(untitled-ontology-23:usesSensor ObjectSomeValuesFrom(untitled-ontology-23:usesSensor untitled-ontology-23:Sensor))
+ObjectPropertyRange(untitled-ontology-23:usesSensor ObjectSomeValuesFrom(untitled-ontology-23:usesSensor untitled-ontology-23:TemperatureSensor))
+ObjectPropertyRange(untitled-ontology-23:usesSensor ObjectSomeValuesFrom(untitled-ontology-23:usesSensor untitled-ontology-23:WeatherSensor))
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: untitled-ontology-23:hasGrassStatus (untitled-ontology-23:hasGrassStatus)
+
+SubDataPropertyOf(untitled-ontology-23:hasGrassStatus owl:topDataProperty)
+DataPropertyDomain(untitled-ontology-23:hasGrassStatus ObjectSomeValuesFrom(untitled-ontology-23:usesSensor untitled-ontology-23:GrassSensor))
+DataPropertyRange(untitled-ontology-23:hasGrassStatus xsd:string)
+
+# Data Property: untitled-ontology-23:hasSystemStatus (untitled-ontology-23:hasSystemStatus)
+
+DataPropertyRange(untitled-ontology-23:hasSystemStatus xsd:string)
+
+# Data Property: untitled-ontology-23:hasTemperatureValue (untitled-ontology-23:hasTemperatureValue)
+
+SubDataPropertyOf(untitled-ontology-23:hasTemperatureValue owl:topDataProperty)
+DataPropertyDomain(untitled-ontology-23:hasTemperatureValue ObjectSomeValuesFrom(untitled-ontology-23:usesSensor untitled-ontology-23:TemperatureSensor))
+DataPropertyRange(untitled-ontology-23:hasTemperatureValue xsd:float)
+
+# Data Property: untitled-ontology-23:hasWeatherType (untitled-ontology-23:hasWeatherType)
+
+SubDataPropertyOf(untitled-ontology-23:hasWeatherType owl:topDataProperty)
+DataPropertyDomain(untitled-ontology-23:hasWeatherType ObjectSomeValuesFrom(untitled-ontology-23:usesSensor untitled-ontology-23:WeatherSensor))
+DataPropertyRange(untitled-ontology-23:hasWeatherType xsd:string)
+
+# Data Property: untitled-ontology-23:regulationStatus (untitled-ontology-23:regulationStatus)
+
+SubDataPropertyOf(untitled-ontology-23:regulationStatus owl:topDataProperty)
+DataPropertyDomain(untitled-ontology-23:regulationStatus ObjectSomeValuesFrom(untitled-ontology-23:regulatesWithDevice untitled-ontology-23:RegulationDevice))
+DataPropertyRange(untitled-ontology-23:regulationStatus xsd:string)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: untitled-ontology-23:ColdWeather (untitled-ontology-23:ColdWeather)
+
+SubClassOf(untitled-ontology-23:ColdWeather untitled-ontology-23:WeatherConditon)
+DisjointClasses(untitled-ontology-23:ColdWeather untitled-ontology-23:HotWeather)
+DisjointClasses(untitled-ontology-23:ColdWeather untitled-ontology-23:NormalWeather)
+
+# Class: untitled-ontology-23:DryGrass (untitled-ontology-23:DryGrass)
+
+SubClassOf(untitled-ontology-23:DryGrass untitled-ontology-23:GrassCondition)
+DisjointClasses(untitled-ontology-23:DryGrass untitled-ontology-23:SnowCoveredGrass)
+DisjointClasses(untitled-ontology-23:DryGrass untitled-ontology-23:wetGrass)
+
+# Class: untitled-ontology-23:GrassCondition (untitled-ontology-23:GrassCondition)
+
+SubClassOf(untitled-ontology-23:GrassCondition untitled-ontology-23:SmartFootballStadium)
+
+# Class: untitled-ontology-23:GrassSensor (untitled-ontology-23:GrassSensor)
+
+SubClassOf(untitled-ontology-23:GrassSensor untitled-ontology-23:Sensor)
+
+# Class: untitled-ontology-23:HeaterSystem (untitled-ontology-23:HeaterSystem)
+
+SubClassOf(untitled-ontology-23:HeaterSystem untitled-ontology-23:RegulationDevice)
+
+# Class: untitled-ontology-23:HighTemperature (untitled-ontology-23:HighTemperature)
+
+SubClassOf(untitled-ontology-23:HighTemperature untitled-ontology-23:TemperatureCondition)
+DisjointClasses(untitled-ontology-23:HighTemperature untitled-ontology-23:LowTemperature)
+
+# Class: untitled-ontology-23:HotWeather (untitled-ontology-23:HotWeather)
+
+SubClassOf(untitled-ontology-23:HotWeather untitled-ontology-23:WeatherConditon)
+DisjointClasses(untitled-ontology-23:HotWeather untitled-ontology-23:NormalWeather)
+
+# Class: untitled-ontology-23:IrrigationSystem (untitled-ontology-23:IrrigationSystem)
+
+SubClassOf(untitled-ontology-23:IrrigationSystem untitled-ontology-23:RegulationDevice)
+
+# Class: untitled-ontology-23:LowTemperature (untitled-ontology-23:LowTemperature)
+
+SubClassOf(untitled-ontology-23:LowTemperature untitled-ontology-23:TemperatureCondition)
+
+# Class: untitled-ontology-23:NormalWeather (untitled-ontology-23:NormalWeather)
+
+SubClassOf(untitled-ontology-23:NormalWeather untitled-ontology-23:WeatherConditon)
+
+# Class: untitled-ontology-23:RegulationDevice (untitled-ontology-23:RegulationDevice)
+
+SubClassOf(untitled-ontology-23:RegulationDevice untitled-ontology-23:SmartFootballStadium)
+
+# Class: untitled-ontology-23:Sensor (untitled-ontology-23:Sensor)
+
+SubClassOf(untitled-ontology-23:Sensor untitled-ontology-23:SmartFootballStadium)
+
+# Class: untitled-ontology-23:SnowCoveredGrass (untitled-ontology-23:SnowCoveredGrass)
+
+SubClassOf(untitled-ontology-23:SnowCoveredGrass untitled-ontology-23:GrassCondition)
+
+# Class: untitled-ontology-23:TemperatureCondition (untitled-ontology-23:TemperatureCondition)
+
+SubClassOf(untitled-ontology-23:TemperatureCondition untitled-ontology-23:SmartFootballStadium)
+
+# Class: untitled-ontology-23:TemperatureSensor (untitled-ontology-23:TemperatureSensor)
+
+SubClassOf(untitled-ontology-23:TemperatureSensor untitled-ontology-23:Sensor)
+
+# Class: untitled-ontology-23:WaterGridSystem (untitled-ontology-23:WaterGridSystem)
+
+SubClassOf(untitled-ontology-23:WaterGridSystem untitled-ontology-23:RegulationDevice)
+
+# Class: untitled-ontology-23:WeatherConditon (untitled-ontology-23:WeatherConditon)
+
+SubClassOf(untitled-ontology-23:WeatherConditon untitled-ontology-23:SmartFootballStadium)
+
+# Class: untitled-ontology-23:WeatherSensor (untitled-ontology-23:WeatherSensor)
+
+SubClassOf(untitled-ontology-23:WeatherSensor untitled-ontology-23:Sensor)
+
+# Class: untitled-ontology-23:wetGrass (untitled-ontology-23:wetGrass)
+
+SubClassOf(untitled-ontology-23:wetGrass untitled-ontology-23:GrassCondition)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: untitled-ontology-23:Active (untitled-ontology-23:Active)
+
+DataPropertyAssertion(untitled-ontology-23:hasSystemStatus untitled-ontology-23:Active "Active")
+
+# Individual: untitled-ontology-23:CampNou (untitled-ontology-23:CampNou)
+
+ClassAssertion(untitled-ontology-23:SmartFootballStadium untitled-ontology-23:CampNou)
+ClassAssertion(ObjectSomeValuesFrom(owl:topObjectProperty untitled-ontology-23:SmartFootballStadium) untitled-ontology-23:CampNou)
+ObjectPropertyAssertion(untitled-ontology-23:hasCondition untitled-ontology-23:CampNou untitled-ontology-23:ColdWeatherCampNou)
+ObjectPropertyAssertion(untitled-ontology-23:hasCondition untitled-ontology-23:CampNou untitled-ontology-23:WetGrassCampNou)
+ObjectPropertyAssertion(untitled-ontology-23:regulatesWithDevice untitled-ontology-23:CampNou untitled-ontology-23:HeaterSystemCampNou)
+ObjectPropertyAssertion(untitled-ontology-23:regulatesWithDevice untitled-ontology-23:CampNou untitled-ontology-23:IrrigationSystemCampNou)
+ObjectPropertyAssertion(untitled-ontology-23:regulatesWithDevice untitled-ontology-23:CampNou untitled-ontology-23:WaterGridSystemCampNou)
+ObjectPropertyAssertion(untitled-ontology-23:usesSensor untitled-ontology-23:CampNou untitled-ontology-23:TemperatureSensorCampNou)
+
+# Individual: untitled-ontology-23:Cold (untitled-ontology-23:Cold)
+
+DataPropertyAssertion(untitled-ontology-23:hasWeatherType untitled-ontology-23:Cold "Cold")
+
+# Individual: untitled-ontology-23:ColdWeatherCampNou (untitled-ontology-23:ColdWeatherCampNou)
+
+ClassAssertion(untitled-ontology-23:ColdWeather untitled-ontology-23:ColdWeatherCampNou)
+DataPropertyAssertion(untitled-ontology-23:hasGrassStatus untitled-ontology-23:ColdWeatherCampNou "Cold")
+DataPropertyAssertion(untitled-ontology-23:hasWeatherType untitled-ontology-23:ColdWeatherCampNou "ColdWeatherCampNou")
+
+# Individual: untitled-ontology-23:Dry (untitled-ontology-23:Dry)
+
+DataPropertyAssertion(untitled-ontology-23:hasGrassStatus untitled-ontology-23:Dry "Dry")
+
+# Individual: untitled-ontology-23:DryGrassCampNou (untitled-ontology-23:DryGrassCampNou)
+
+ClassAssertion(untitled-ontology-23:DryGrass untitled-ontology-23:DryGrassCampNou)
+ClassAssertion(untitled-ontology-23:GrassSensor untitled-ontology-23:DryGrassCampNou)
+ClassAssertion(ObjectSomeValuesFrom(owl:topObjectProperty untitled-ontology-23:DryGrass) untitled-ontology-23:DryGrassCampNou)
+DataPropertyAssertion(untitled-ontology-23:hasGrassStatus untitled-ontology-23:DryGrassCampNou "Dry")
+
+# Individual: untitled-ontology-23:HeaterSystemCampNou (untitled-ontology-23:HeaterSystemCampNou)
+
+ClassAssertion(untitled-ontology-23:HeaterSystem untitled-ontology-23:HeaterSystemCampNou)
+ClassAssertion(ObjectSomeValuesFrom(owl:topObjectProperty untitled-ontology-23:HeaterSystem) untitled-ontology-23:HeaterSystemCampNou)
+DataPropertyAssertion(untitled-ontology-23:regulationStatus untitled-ontology-23:HeaterSystemCampNou "Active")
+
+# Individual: untitled-ontology-23:HighTemperatureCampNou (untitled-ontology-23:HighTemperatureCampNou)
+
+ClassAssertion(untitled-ontology-23:HighTemperature untitled-ontology-23:HighTemperatureCampNou)
+ClassAssertion(ObjectSomeValuesFrom(owl:topObjectProperty untitled-ontology-23:HotWeather) untitled-ontology-23:HighTemperatureCampNou)
+
+# Individual: untitled-ontology-23:Hot (untitled-ontology-23:Hot)
+
+DataPropertyAssertion(untitled-ontology-23:hasWeatherType untitled-ontology-23:Hot "Hot")
+
+# Individual: untitled-ontology-23:HotWeatherCampNou (untitled-ontology-23:HotWeatherCampNou)
+
+ClassAssertion(untitled-ontology-23:HotWeather untitled-ontology-23:HotWeatherCampNou)
+DataPropertyAssertion(untitled-ontology-23:hasWeatherType untitled-ontology-23:HotWeatherCampNou "Hot")
+DataPropertyAssertion(untitled-ontology-23:hasWeatherType untitled-ontology-23:HotWeatherCampNou "HotWeatherCampNou")
+
+# Individual: untitled-ontology-23:Inactive (untitled-ontology-23:Inactive)
+
+DataPropertyAssertion(untitled-ontology-23:hasSystemStatus untitled-ontology-23:Inactive "Inactive")
+
+# Individual: untitled-ontology-23:IrrigationSystemCampNou (untitled-ontology-23:IrrigationSystemCampNou)
+
+ClassAssertion(untitled-ontology-23:IrrigationSystem untitled-ontology-23:IrrigationSystemCampNou)
+ClassAssertion(ObjectSomeValuesFrom(owl:topObjectProperty untitled-ontology-23:IrrigationSystem) untitled-ontology-23:IrrigationSystemCampNou)
+DataPropertyAssertion(untitled-ontology-23:regulationStatus untitled-ontology-23:IrrigationSystemCampNou "Active")
+
+# Individual: untitled-ontology-23:LowTemperatureCampNou (untitled-ontology-23:LowTemperatureCampNou)
+
+ClassAssertion(untitled-ontology-23:LowTemperature untitled-ontology-23:LowTemperatureCampNou)
+ClassAssertion(ObjectSomeValuesFrom(owl:topObjectProperty untitled-ontology-23:ColdWeather) untitled-ontology-23:LowTemperatureCampNou)
+
+# Individual: untitled-ontology-23:Normal (untitled-ontology-23:Normal)
+
+DataPropertyAssertion(untitled-ontology-23:hasWeatherType untitled-ontology-23:Normal "Normal")
+
+# Individual: untitled-ontology-23:NormalWeatherCampNou (untitled-ontology-23:NormalWeatherCampNou)
+
+ClassAssertion(untitled-ontology-23:NormalWeather untitled-ontology-23:NormalWeatherCampNou)
+DataPropertyAssertion(untitled-ontology-23:hasWeatherType untitled-ontology-23:NormalWeatherCampNou "Normal")
+DataPropertyAssertion(untitled-ontology-23:hasWeatherType untitled-ontology-23:NormalWeatherCampNou "NormalWeatherCampNou")
+
+# Individual: untitled-ontology-23:RegulationDevice (untitled-ontology-23:RegulationDevice)
+
+ClassAssertion(untitled-ontology-23:RegulationDevice untitled-ontology-23:RegulationDevice)
+
+# Individual: untitled-ontology-23:Snow (untitled-ontology-23:Snow)
+
+DataPropertyAssertion(untitled-ontology-23:hasGrassStatus untitled-ontology-23:Snow "Snow")
+
+# Individual: untitled-ontology-23:SnowCoveredGrassCampNou (untitled-ontology-23:SnowCoveredGrassCampNou)
+
+ClassAssertion(untitled-ontology-23:GrassSensor untitled-ontology-23:SnowCoveredGrassCampNou)
+ClassAssertion(untitled-ontology-23:SnowCoveredGrass untitled-ontology-23:SnowCoveredGrassCampNou)
+ClassAssertion(ObjectSomeValuesFrom(owl:topObjectProperty untitled-ontology-23:SnowCoveredGrass) untitled-ontology-23:SnowCoveredGrassCampNou)
+DataPropertyAssertion(untitled-ontology-23:hasGrassStatus untitled-ontology-23:SnowCoveredGrassCampNou "Snow")
+
+# Individual: untitled-ontology-23:TemperatureSensorCampNou (untitled-ontology-23:TemperatureSensorCampNou)
+
+ClassAssertion(untitled-ontology-23:TemperatureSensor untitled-ontology-23:TemperatureSensorCampNou)
+
+# Individual: untitled-ontology-23:WaterGridSystemCampNou (untitled-ontology-23:WaterGridSystemCampNou)
+
+ClassAssertion(untitled-ontology-23:WaterGridSystem untitled-ontology-23:WaterGridSystemCampNou)
+ClassAssertion(ObjectSomeValuesFrom(owl:topObjectProperty untitled-ontology-23:WaterGridSystem) untitled-ontology-23:WaterGridSystemCampNou)
+DataPropertyAssertion(untitled-ontology-23:regulationStatus untitled-ontology-23:WaterGridSystemCampNou "Active")
+
+# Individual: untitled-ontology-23:WeatherSensorCampNou (untitled-ontology-23:WeatherSensorCampNou)
+
+ClassAssertion(untitled-ontology-23:WeatherSensor untitled-ontology-23:WeatherSensorCampNou)
+ObjectPropertyAssertion(untitled-ontology-23:hasCondition untitled-ontology-23:WeatherSensorCampNou untitled-ontology-23:NormalWeatherCampNou)
+DataPropertyAssertion(untitled-ontology-23:hasWeatherType untitled-ontology-23:WeatherSensorCampNou "Normal")
+
+# Individual: untitled-ontology-23:Wet (untitled-ontology-23:Wet)
+
+DataPropertyAssertion(untitled-ontology-23:hasGrassStatus untitled-ontology-23:Wet "")
+
+# Individual: untitled-ontology-23:WetGrassCampNou (untitled-ontology-23:WetGrassCampNou)
+
+ClassAssertion(untitled-ontology-23:GrassSensor untitled-ontology-23:WetGrassCampNou)
+ClassAssertion(untitled-ontology-23:wetGrass untitled-ontology-23:WetGrassCampNou)
+ClassAssertion(ObjectSomeValuesFrom(owl:topObjectProperty untitled-ontology-23:wetGrass) untitled-ontology-23:WetGrassCampNou)
+ObjectPropertyAssertion(untitled-ontology-23:isConnectedTo untitled-ontology-23:WetGrassCampNou untitled-ontology-23:ColdWeatherCampNou)
+
+
+DLSafeRule(Body(ClassAtom(untitled-ontology-23:SmartFootballStadium Variable(<urn:swrl:var#CampNou>)) ClassAtom(untitled-ontology-23:TemperatureSensor Variable(<urn:swrl:var#x>)) DataPropertyAtom(untitled-ontology-23:hasTemperatureValue Variable(<urn:swrl:var#x>) Variable(<urn:swrl:var#temperature>)) ObjectPropertyAtom(untitled-ontology-23:hasCondition Variable(<urn:swrl:var#CampNou>) Variable(<urn:swrl:var#GrasCondition>)) DataPropertyAtom(untitled-ontology-23:hasGrassStatus Variable(<urn:swrl:var#GrassSensor>) "Wet") ObjectPropertyAtom(untitled-ontology-23:isConnectedTo Variable(<urn:swrl:var#GrassCondition>) Variable(<urn:swrl:var#TemperatureCondition>)) BuiltInAtom(swrlb:lessThan Variable(<urn:swrl:var#temperature>) "10"^^xsd:integer))Head(DataPropertyAtom(untitled-ontology-23:hasGrassStatus Variable(<urn:swrl:var#GrassSensor>) "Wet")))
+DLSafeRule(Body(ClassAtom(untitled-ontology-23:SmartFootballStadium Variable(<urn:swrl:var#CampNou>)) ClassAtom(untitled-ontology-23:WeatherConditon Variable(<urn:swrl:var#sensor>)) DataPropertyAtom(untitled-ontology-23:hasWeatherType Variable(<urn:swrl:var#sensor>) "Normal") ObjectPropertyAtom(untitled-ontology-23:hasCondition Variable(<urn:swrl:var#stadium>) Variable(<urn:swrl:var#NormalWeatherCampNou>)) ObjectPropertyAtom(untitled-ontology-23:regulatesWithDevice Variable(<urn:swrl:var#CampNou>) Variable(<urn:swrl:var#RegulationDevice>)) DataPropertyAtom(untitled-ontology-23:hasSystemStatus Variable(<urn:swrl:var#RegulationDevice>) "Active"))Head(DataPropertyAtom(untitled-ontology-23:hasSystemStatus Variable(<urn:swrl:var#regulationDevice>) "Inactive")))
+DLSafeRule(Body(ClassAtom(untitled-ontology-23:SmartFootballStadium Variable(<urn:swrl:var#CampNou>)) ClassAtom(untitled-ontology-23:WeatherSensor Variable(<urn:swrl:var#sensor>)) DataPropertyAtom(untitled-ontology-23:hasWeatherType Variable(<urn:swrl:var#sensor>) "Normal") ObjectPropertyAtom(untitled-ontology-23:hasCondition Variable(<urn:swrl:var#CampNou>) Variable(<urn:swrl:var#NornmalWeatherCampNou>)) ObjectPropertyAtom(untitled-ontology-23:hasCondition Variable(<urn:swrl:var#CampNou>) Variable(<urn:swrl:var#SnowCoveredCampNou>)) DataPropertyAtom(untitled-ontology-23:hasSystemStatus Variable(<urn:swrl:var#HeaterSystemCampNou>) "Active"))Head(DataPropertyAtom(untitled-ontology-23:hasSystemStatus Variable(<urn:swrl:var#HeaterSystemCampNou>) "Inactive")))
+DLSafeRule(Body(ClassAtom(untitled-ontology-23:SmartFootballStadium Variable(<urn:swrl:var#CampNou>)) ObjectPropertyAtom(untitled-ontology-23:hasCondition Variable(<urn:swrl:var#CampNou>) Variable(<urn:swrl:var#WetGrassCampNou>)) ObjectPropertyAtom(untitled-ontology-23:regulatesWithDevice Variable(<urn:swrl:var#CampNou>) Variable(<urn:swrl:var#IrrigationSystemCampNou>)) DataPropertyAtom(untitled-ontology-23:hasSystemStatus Variable(<urn:swrl:var#IrrigationSystem>) "Inactive"))Head(DataPropertyAtom(untitled-ontology-23:hasSystemStatus Variable(<urn:swrl:var#IrrigiationSystem>) "Active")))
+DLSafeRule(Body(ClassAtom(untitled-ontology-23:SmartFootballStadium Variable(<urn:swrl:var#stadium>)) ClassAtom(untitled-ontology-23:TemperatureSensor Variable(<urn:swrl:var#sensor>)) DataPropertyAtom(untitled-ontology-23:hasTemperatureValue Variable(<urn:swrl:var#sensor>) Variable(<urn:swrl:var#temperature>)) BuiltInAtom(swrlb:greaterThan Variable(<urn:swrl:var#temperature>) "0"^^xsd:integer) ObjectPropertyAtom(untitled-ontology-23:hasCondition Variable(<urn:swrl:var#stadium>) Variable(<urn:swrl:var#ColdWeatherCampNou>)) ObjectPropertyAtom(untitled-ontology-23:hasCondition Variable(<urn:swrl:var#stadium>) Variable(<urn:swrl:var#WetGrassCampNou>)) ObjectPropertyAtom(untitled-ontology-23:regulatesWithDevice Variable(<urn:swrl:var#stadium>) Variable(<urn:swrl:var#HeaterSystemCampNou>)) DataPropertyAtom(untitled-ontology-23:hasSystemStatus Variable(<urn:swrl:var#HeaterSystemCampNou>) "Inactive"))Head(DataPropertyAtom(untitled-ontology-23:hasSystemStatus Variable(<urn:swrl:var#HeaterSystemCampNou>) "Active")))
+DLSafeRule(Body(ClassAtom(untitled-ontology-23:TemperatureSensor Variable(<urn:swrl:var#sensor>)) DataPropertyAtom(untitled-ontology-23:hasTemperatureValue Variable(<urn:swrl:var#sensor>) Variable(<urn:swrl:var#temperature>)) BuiltInAtom(swrlb:lessThan Variable(<urn:swrl:var#temperature>) "5"^^xsd:integer) ObjectPropertyAtom(untitled-ontology-23:hasCondition Variable(<urn:swrl:var#CampNou>) Variable(<urn:swrl:var#LowTemperatureCampNou>)) ObjectPropertyAtom(untitled-ontology-23:regulatesWithDevice Variable(<urn:swrl:var#CampNou>) Variable(<urn:swrl:var#WaterGridSystemCampNou>)) DataPropertyAtom(untitled-ontology-23:hasSystemStatus Variable(<urn:swrl:var#WaterGridSystem>) "Inactive"))Head(DataPropertyAtom(untitled-ontology-23:hasSystemStatus Variable(<urn:swrl:var#WaterGridSystemCampNou>) "Active")))
+DLSafeRule(Body(ClassAtom(untitled-ontology-23:WeatherSensor Variable(<urn:swrl:var#sensor>)) DataPropertyAtom(untitled-ontology-23:hasWeatherType Variable(<urn:swrl:var#sensor>) "Normal") ObjectPropertyAtom(untitled-ontology-23:hasCondition Variable(<urn:swrl:var#stadium>) Variable(<urn:swrl:var#normalWeatherCampNou>)) ObjectPropertyAtom(untitled-ontology-23:regulatesWithDevice Variable(<urn:swrl:var#stadium>) Variable(<urn:swrl:var#RegulationDevice>)) DataPropertyAtom(untitled-ontology-23:hasSystemStatus Variable(<urn:swrl:var#RegulationDevice>) "Active"))Head(DataPropertyAtom(untitled-ontology-23:hasSystemStatus Variable(<urn:swrl:var#RegulationDevice>) "Inactive")))
+)

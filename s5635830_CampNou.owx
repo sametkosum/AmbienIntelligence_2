@@ -1,0 +1,1194 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/lenovo/ontologies/2023/10/untitled-ontology-23"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/lenovo/ontologies/2023/10/untitled-ontology-23">
+    <Prefix name="" IRI="http://www.semanticweb.org/lenovo/ontologies/2023/10/untitled-ontology-23#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="swrl" IRI="http://www.w3.org/2003/11/swrl#"/>
+    <Prefix name="swrlb" IRI="http://www.w3.org/2003/11/swrlb#"/>
+    <Prefix name="untitled-ontology-23" IRI="http://www.semanticweb.org/lenovo/ontologies/2023/10/untitled-ontology-23#"/>
+    <Declaration>
+        <Class IRI="#ColdWeather"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DryGrass"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GrassCondition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GrassSensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HeaterSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HighTemperature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HotWeather"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IrrigationSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LowTemperature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NormalWeather"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RegulationDevice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SmartFootballStadium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SnowCoveredGrass"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TemperatureCondition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TemperatureSensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WaterGridSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WeatherConditon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WeatherSensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#wetGrass"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCondition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isConnectedTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#regulatesWithDevice"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usesSensor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasGrassStatus"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSystemStatus"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTemperatureValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasWeatherType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#regulationStatus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Active"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CampNou"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cold"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ColdWeatherCampNou"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dry"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DryGrassCampNou"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HeaterSystemCampNou"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HighTemperatureCampNou"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HotWeatherCampNou"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Inactive"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IrrigationSystemCampNou"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LowTemperatureCampNou"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Normal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NormalWeatherCampNou"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RegulationDevice"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Snow"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SnowCoveredGrassCampNou"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TemperatureSensorCampNou"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WaterGridSystemCampNou"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WeatherSensorCampNou"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Wet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WetGrassCampNou"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#ColdWeather"/>
+        <Class IRI="#WeatherConditon"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DryGrass"/>
+        <Class IRI="#GrassCondition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GrassCondition"/>
+        <Class IRI="#SmartFootballStadium"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GrassSensor"/>
+        <Class IRI="#Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HeaterSystem"/>
+        <Class IRI="#RegulationDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HighTemperature"/>
+        <Class IRI="#TemperatureCondition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HotWeather"/>
+        <Class IRI="#WeatherConditon"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IrrigationSystem"/>
+        <Class IRI="#RegulationDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LowTemperature"/>
+        <Class IRI="#TemperatureCondition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NormalWeather"/>
+        <Class IRI="#WeatherConditon"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RegulationDevice"/>
+        <Class IRI="#SmartFootballStadium"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sensor"/>
+        <Class IRI="#SmartFootballStadium"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SnowCoveredGrass"/>
+        <Class IRI="#GrassCondition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TemperatureCondition"/>
+        <Class IRI="#SmartFootballStadium"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TemperatureSensor"/>
+        <Class IRI="#Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WaterGridSystem"/>
+        <Class IRI="#RegulationDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WeatherConditon"/>
+        <Class IRI="#SmartFootballStadium"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WeatherSensor"/>
+        <Class IRI="#Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#wetGrass"/>
+        <Class IRI="#GrassCondition"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#ColdWeather"/>
+        <Class IRI="#HotWeather"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ColdWeather"/>
+        <Class IRI="#NormalWeather"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DryGrass"/>
+        <Class IRI="#SnowCoveredGrass"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DryGrass"/>
+        <Class IRI="#wetGrass"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HighTemperature"/>
+        <Class IRI="#LowTemperature"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HotWeather"/>
+        <Class IRI="#NormalWeather"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#SmartFootballStadium"/>
+        <NamedIndividual IRI="#CampNou"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#SmartFootballStadium"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#CampNou"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ColdWeather"/>
+        <NamedIndividual IRI="#ColdWeatherCampNou"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DryGrass"/>
+        <NamedIndividual IRI="#DryGrassCampNou"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GrassSensor"/>
+        <NamedIndividual IRI="#DryGrassCampNou"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#DryGrass"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#DryGrassCampNou"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HeaterSystem"/>
+        <NamedIndividual IRI="#HeaterSystemCampNou"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#HeaterSystem"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#HeaterSystemCampNou"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HighTemperature"/>
+        <NamedIndividual IRI="#HighTemperatureCampNou"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#HotWeather"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#HighTemperatureCampNou"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HotWeather"/>
+        <NamedIndividual IRI="#HotWeatherCampNou"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#IrrigationSystem"/>
+        <NamedIndividual IRI="#IrrigationSystemCampNou"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#IrrigationSystem"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#IrrigationSystemCampNou"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LowTemperature"/>
+        <NamedIndividual IRI="#LowTemperatureCampNou"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#ColdWeather"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#LowTemperatureCampNou"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NormalWeather"/>
+        <NamedIndividual IRI="#NormalWeatherCampNou"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RegulationDevice"/>
+        <NamedIndividual IRI="#RegulationDevice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GrassSensor"/>
+        <NamedIndividual IRI="#SnowCoveredGrassCampNou"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SnowCoveredGrass"/>
+        <NamedIndividual IRI="#SnowCoveredGrassCampNou"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#SnowCoveredGrass"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#SnowCoveredGrassCampNou"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TemperatureSensor"/>
+        <NamedIndividual IRI="#TemperatureSensorCampNou"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WaterGridSystem"/>
+        <NamedIndividual IRI="#WaterGridSystemCampNou"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#WaterGridSystem"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#WaterGridSystemCampNou"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WeatherSensor"/>
+        <NamedIndividual IRI="#WeatherSensorCampNou"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GrassSensor"/>
+        <NamedIndividual IRI="#WetGrassCampNou"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#wetGrass"/>
+        <NamedIndividual IRI="#WetGrassCampNou"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#wetGrass"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#WetGrassCampNou"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCondition"/>
+        <NamedIndividual IRI="#CampNou"/>
+        <NamedIndividual IRI="#ColdWeatherCampNou"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCondition"/>
+        <NamedIndividual IRI="#CampNou"/>
+        <NamedIndividual IRI="#WetGrassCampNou"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#regulatesWithDevice"/>
+        <NamedIndividual IRI="#CampNou"/>
+        <NamedIndividual IRI="#HeaterSystemCampNou"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#regulatesWithDevice"/>
+        <NamedIndividual IRI="#CampNou"/>
+        <NamedIndividual IRI="#IrrigationSystemCampNou"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#regulatesWithDevice"/>
+        <NamedIndividual IRI="#CampNou"/>
+        <NamedIndividual IRI="#WaterGridSystemCampNou"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usesSensor"/>
+        <NamedIndividual IRI="#CampNou"/>
+        <NamedIndividual IRI="#TemperatureSensorCampNou"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCondition"/>
+        <NamedIndividual IRI="#WeatherSensorCampNou"/>
+        <NamedIndividual IRI="#NormalWeatherCampNou"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <NamedIndividual IRI="#WetGrassCampNou"/>
+        <NamedIndividual IRI="#ColdWeatherCampNou"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSystemStatus"/>
+        <NamedIndividual IRI="#Active"/>
+        <Literal>Active</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWeatherType"/>
+        <NamedIndividual IRI="#Cold"/>
+        <Literal>Cold</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGrassStatus"/>
+        <NamedIndividual IRI="#ColdWeatherCampNou"/>
+        <Literal>Cold</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWeatherType"/>
+        <NamedIndividual IRI="#ColdWeatherCampNou"/>
+        <Literal>ColdWeatherCampNou</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGrassStatus"/>
+        <NamedIndividual IRI="#Dry"/>
+        <Literal>Dry</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGrassStatus"/>
+        <NamedIndividual IRI="#DryGrassCampNou"/>
+        <Literal>Dry</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#regulationStatus"/>
+        <NamedIndividual IRI="#HeaterSystemCampNou"/>
+        <Literal>Active</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWeatherType"/>
+        <NamedIndividual IRI="#Hot"/>
+        <Literal>Hot</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWeatherType"/>
+        <NamedIndividual IRI="#HotWeatherCampNou"/>
+        <Literal>Hot</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWeatherType"/>
+        <NamedIndividual IRI="#HotWeatherCampNou"/>
+        <Literal>HotWeatherCampNou</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSystemStatus"/>
+        <NamedIndividual IRI="#Inactive"/>
+        <Literal>Inactive</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#regulationStatus"/>
+        <NamedIndividual IRI="#IrrigationSystemCampNou"/>
+        <Literal>Active</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWeatherType"/>
+        <NamedIndividual IRI="#Normal"/>
+        <Literal>Normal</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWeatherType"/>
+        <NamedIndividual IRI="#NormalWeatherCampNou"/>
+        <Literal>Normal</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWeatherType"/>
+        <NamedIndividual IRI="#NormalWeatherCampNou"/>
+        <Literal>NormalWeatherCampNou</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGrassStatus"/>
+        <NamedIndividual IRI="#Snow"/>
+        <Literal>Snow</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGrassStatus"/>
+        <NamedIndividual IRI="#SnowCoveredGrassCampNou"/>
+        <Literal>Snow</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#regulationStatus"/>
+        <NamedIndividual IRI="#WaterGridSystemCampNou"/>
+        <Literal>Active</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWeatherType"/>
+        <NamedIndividual IRI="#WeatherSensorCampNou"/>
+        <Literal>Normal</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasGrassStatus"/>
+        <NamedIndividual IRI="#Wet"/>
+        <Literal></Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCondition"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#regulatesWithDevice"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#usesSensor"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCondition"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCondition"/>
+            <Class IRI="#SmartFootballStadium"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCondition"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#SmartFootballStadium"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isConnectedTo"/>
+            <Class IRI="#ColdWeather"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isConnectedTo"/>
+            <Class IRI="#DryGrass"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isConnectedTo"/>
+            <Class IRI="#GrassCondition"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isConnectedTo"/>
+            <Class IRI="#HighTemperature"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isConnectedTo"/>
+            <Class IRI="#HotWeather"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isConnectedTo"/>
+            <Class IRI="#LowTemperature"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isConnectedTo"/>
+            <Class IRI="#NormalWeather"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isConnectedTo"/>
+            <Class IRI="#SnowCoveredGrass"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isConnectedTo"/>
+            <Class IRI="#TemperatureCondition"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isConnectedTo"/>
+            <Class IRI="#WeatherConditon"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isConnectedTo"/>
+            <Class IRI="#wetGrass"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#regulatesWithDevice"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#regulatesWithDevice"/>
+            <Class IRI="#SmartFootballStadium"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#regulatesWithDevice"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#SmartFootballStadium"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usesSensor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#usesSensor"/>
+            <Class IRI="#SmartFootballStadium"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usesSensor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#SmartFootballStadium"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCondition"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCondition"/>
+            <Class IRI="#GrassCondition"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCondition"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCondition"/>
+            <Class IRI="#HighTemperature"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCondition"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCondition"/>
+            <Class IRI="#LowTemperature"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCondition"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCondition"/>
+            <Class IRI="#TemperatureCondition"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCondition"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCondition"/>
+            <Class IRI="#WeatherConditon"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isConnectedTo"/>
+            <Class IRI="#ColdWeather"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isConnectedTo"/>
+            <Class IRI="#DryGrass"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isConnectedTo"/>
+            <Class IRI="#GrassCondition"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isConnectedTo"/>
+            <Class IRI="#HighTemperature"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isConnectedTo"/>
+            <Class IRI="#HotWeather"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isConnectedTo"/>
+            <Class IRI="#LowTemperature"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isConnectedTo"/>
+            <Class IRI="#NormalWeather"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isConnectedTo"/>
+            <Class IRI="#SnowCoveredGrass"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isConnectedTo"/>
+            <Class IRI="#TemperatureCondition"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isConnectedTo"/>
+            <Class IRI="#WeatherConditon"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isConnectedTo"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isConnectedTo"/>
+            <Class IRI="#wetGrass"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#regulatesWithDevice"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#regulatesWithDevice"/>
+            <Class IRI="#HeaterSystem"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#regulatesWithDevice"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#regulatesWithDevice"/>
+            <Class IRI="#IrrigationSystem"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#regulatesWithDevice"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#regulatesWithDevice"/>
+            <Class IRI="#RegulationDevice"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#regulatesWithDevice"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#regulatesWithDevice"/>
+            <Class IRI="#WaterGridSystem"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usesSensor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#usesSensor"/>
+            <Class IRI="#GrassSensor"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usesSensor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#usesSensor"/>
+            <Class IRI="#Sensor"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usesSensor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#usesSensor"/>
+            <Class IRI="#TemperatureSensor"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usesSensor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#usesSensor"/>
+            <Class IRI="#WeatherSensor"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasGrassStatus"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasTemperatureValue"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasWeatherType"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#regulationStatus"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasGrassStatus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#usesSensor"/>
+            <Class IRI="#GrassSensor"/>
+        </ObjectSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTemperatureValue"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#usesSensor"/>
+            <Class IRI="#TemperatureSensor"/>
+        </ObjectSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasWeatherType"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#usesSensor"/>
+            <Class IRI="#WeatherSensor"/>
+        </ObjectSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#regulationStatus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#regulatesWithDevice"/>
+            <Class IRI="#RegulationDevice"/>
+        </ObjectSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasGrassStatus"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSystemStatus"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasTemperatureValue"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasWeatherType"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#regulationStatus"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#SmartFootballStadium"/>
+                <Variable IRI="urn:swrl:var#CampNou"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#TemperatureSensor"/>
+                <Variable IRI="urn:swrl:var#x"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasTemperatureValue"/>
+                <Variable IRI="urn:swrl:var#x"/>
+                <Variable IRI="urn:swrl:var#temperature"/>
+            </DataPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasCondition"/>
+                <Variable IRI="urn:swrl:var#CampNou"/>
+                <Variable IRI="urn:swrl:var#GrasCondition"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasGrassStatus"/>
+                <Variable IRI="urn:swrl:var#GrassSensor"/>
+                <Literal>Wet</Literal>
+            </DataPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isConnectedTo"/>
+                <Variable IRI="urn:swrl:var#GrassCondition"/>
+                <Variable IRI="urn:swrl:var#TemperatureCondition"/>
+            </ObjectPropertyAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:lessThan">
+                <Variable IRI="urn:swrl:var#temperature"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasGrassStatus"/>
+                <Variable IRI="urn:swrl:var#GrassSensor"/>
+                <Literal>Wet</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#SmartFootballStadium"/>
+                <Variable IRI="urn:swrl:var#CampNou"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#WeatherConditon"/>
+                <Variable IRI="urn:swrl:var#sensor"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasWeatherType"/>
+                <Variable IRI="urn:swrl:var#sensor"/>
+                <Literal>Normal</Literal>
+            </DataPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasCondition"/>
+                <Variable IRI="urn:swrl:var#stadium"/>
+                <Variable IRI="urn:swrl:var#NormalWeatherCampNou"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#regulatesWithDevice"/>
+                <Variable IRI="urn:swrl:var#CampNou"/>
+                <Variable IRI="urn:swrl:var#RegulationDevice"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasSystemStatus"/>
+                <Variable IRI="urn:swrl:var#RegulationDevice"/>
+                <Literal>Active</Literal>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasSystemStatus"/>
+                <Variable IRI="urn:swrl:var#regulationDevice"/>
+                <Literal>Inactive</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#SmartFootballStadium"/>
+                <Variable IRI="urn:swrl:var#CampNou"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#WeatherSensor"/>
+                <Variable IRI="urn:swrl:var#sensor"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasWeatherType"/>
+                <Variable IRI="urn:swrl:var#sensor"/>
+                <Literal>Normal</Literal>
+            </DataPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasCondition"/>
+                <Variable IRI="urn:swrl:var#CampNou"/>
+                <Variable IRI="urn:swrl:var#NornmalWeatherCampNou"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasCondition"/>
+                <Variable IRI="urn:swrl:var#CampNou"/>
+                <Variable IRI="urn:swrl:var#SnowCoveredCampNou"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasSystemStatus"/>
+                <Variable IRI="urn:swrl:var#HeaterSystemCampNou"/>
+                <Literal>Active</Literal>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasSystemStatus"/>
+                <Variable IRI="urn:swrl:var#HeaterSystemCampNou"/>
+                <Literal>Inactive</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#SmartFootballStadium"/>
+                <Variable IRI="urn:swrl:var#CampNou"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasCondition"/>
+                <Variable IRI="urn:swrl:var#CampNou"/>
+                <Variable IRI="urn:swrl:var#WetGrassCampNou"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#regulatesWithDevice"/>
+                <Variable IRI="urn:swrl:var#CampNou"/>
+                <Variable IRI="urn:swrl:var#IrrigationSystemCampNou"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasSystemStatus"/>
+                <Variable IRI="urn:swrl:var#IrrigationSystem"/>
+                <Literal>Inactive</Literal>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasSystemStatus"/>
+                <Variable IRI="urn:swrl:var#IrrigiationSystem"/>
+                <Literal>Active</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#SmartFootballStadium"/>
+                <Variable IRI="urn:swrl:var#stadium"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#TemperatureSensor"/>
+                <Variable IRI="urn:swrl:var#sensor"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasTemperatureValue"/>
+                <Variable IRI="urn:swrl:var#sensor"/>
+                <Variable IRI="urn:swrl:var#temperature"/>
+            </DataPropertyAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:greaterThan">
+                <Variable IRI="urn:swrl:var#temperature"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+            </BuiltInAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasCondition"/>
+                <Variable IRI="urn:swrl:var#stadium"/>
+                <Variable IRI="urn:swrl:var#ColdWeatherCampNou"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasCondition"/>
+                <Variable IRI="urn:swrl:var#stadium"/>
+                <Variable IRI="urn:swrl:var#WetGrassCampNou"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#regulatesWithDevice"/>
+                <Variable IRI="urn:swrl:var#stadium"/>
+                <Variable IRI="urn:swrl:var#HeaterSystemCampNou"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasSystemStatus"/>
+                <Variable IRI="urn:swrl:var#HeaterSystemCampNou"/>
+                <Literal>Inactive</Literal>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasSystemStatus"/>
+                <Variable IRI="urn:swrl:var#HeaterSystemCampNou"/>
+                <Literal>Active</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#TemperatureSensor"/>
+                <Variable IRI="urn:swrl:var#sensor"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasTemperatureValue"/>
+                <Variable IRI="urn:swrl:var#sensor"/>
+                <Variable IRI="urn:swrl:var#temperature"/>
+            </DataPropertyAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:lessThan">
+                <Variable IRI="urn:swrl:var#temperature"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+            </BuiltInAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasCondition"/>
+                <Variable IRI="urn:swrl:var#CampNou"/>
+                <Variable IRI="urn:swrl:var#LowTemperatureCampNou"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#regulatesWithDevice"/>
+                <Variable IRI="urn:swrl:var#CampNou"/>
+                <Variable IRI="urn:swrl:var#WaterGridSystemCampNou"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasSystemStatus"/>
+                <Variable IRI="urn:swrl:var#WaterGridSystem"/>
+                <Literal>Inactive</Literal>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasSystemStatus"/>
+                <Variable IRI="urn:swrl:var#WaterGridSystemCampNou"/>
+                <Literal>Active</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#WeatherSensor"/>
+                <Variable IRI="urn:swrl:var#sensor"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasWeatherType"/>
+                <Variable IRI="urn:swrl:var#sensor"/>
+                <Literal>Normal</Literal>
+            </DataPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasCondition"/>
+                <Variable IRI="urn:swrl:var#stadium"/>
+                <Variable IRI="urn:swrl:var#normalWeatherCampNou"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#regulatesWithDevice"/>
+                <Variable IRI="urn:swrl:var#stadium"/>
+                <Variable IRI="urn:swrl:var#RegulationDevice"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasSystemStatus"/>
+                <Variable IRI="urn:swrl:var#RegulationDevice"/>
+                <Literal>Active</Literal>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasSystemStatus"/>
+                <Variable IRI="urn:swrl:var#RegulationDevice"/>
+                <Literal>Inactive</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
